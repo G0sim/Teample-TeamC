@@ -10,13 +10,18 @@
 </head>
 <body>
 	<form action="/user/signIn-task" method="post">
-		<input type="text" name="id" placeholder="아이디" value="${idSave }" required/>
+		<input type="text" name="id" placeholder="아이디" value="${idSave }" required id="id"/>
 		<input type="password" name="pass" placeholder="비밀번호"/>
-		<input type="checkbox" name="check" />	
+		<input type="checkbox" name="check" id="click"/>	
 		<button type="submit">로그인</button>
 	</form>
 	<c:if test="${param.error eq '1' }">
 		<span style="color: red"><b>아이디 혹은 비밀번호가 일치하지 않습니다.</b></span>
 	</c:if>
+	<script type="text/javascript">
+		document.querySelector("#click").onclick
+	
+	</script>
+	
 </body>
 </html>

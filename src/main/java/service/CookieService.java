@@ -9,9 +9,11 @@ public class CookieService {
 		}
 		Cookie found = null;
 		for(Cookie c : cookies) {
+			System.out.println("found = "+ found);
 			if(c.getName().equals(name)) {
 				found = c;
 				break;
+				
 			}
 		}
 		return found;

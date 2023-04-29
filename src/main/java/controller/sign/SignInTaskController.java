@@ -32,7 +32,6 @@ public class SignInTaskController extends HttpServlet {
 			HttpSession session = req.getSession();
 			session.setAttribute("logon", true);
 			session.setAttribute("logonUser", found);
-			resp.sendRedirect("/");
 	
 			// 로그인이 되면 쿠키생성
 			if(check != null && check.equals("on")) {
@@ -40,9 +39,13 @@ public class SignInTaskController extends HttpServlet {
 				c.setPath("/");
 				c.setMaxAge(60*60*24*30*3);
 				resp.addCookie(c);
-				System.out.println("c =" + c);
+				//System.out.println("c =" + c);
 
+				resp.sendRedirect("/");
+			}else {
+				resp.sendRedirect("/");
 			}
+			
 		} else {
 			
 			resp.sendRedirect("/user/signIn?error=1");

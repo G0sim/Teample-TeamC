@@ -15,10 +15,12 @@
 <button class="indedetail-button" type="submit">상세보기+</button>
 </form>
 </div>
+<%--기본 검색 영역 --%>
 <div class="back" style="font-size: 20px;">
 <p>지역별</p>
 <p>테마별</p>
-
+<a href="/search">리스트</a>
+<button type="submit">검색하기</button>
 </div>
 <table style="margin: auto; width: 1355px;">
     <tbody>
@@ -27,7 +29,7 @@
             	<td style = "width : 20%; max-width: 270px;">
                 	<img style="border-radius: 50%; width: 180px; height: 180px; margin: 20px;" src="${obj.firstImageUrl}" />
                     <br>
-                    <b>${obj.facltNm.replace("(주)", " ")}</b>
+                    <b>${obj.facltNm.replace("(주)", "")}</b>
                     <br>
                     <p>${obj.lineIntro}</p>
                 </td>

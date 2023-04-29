@@ -23,10 +23,8 @@
 <div style="text-align: right; padding: 1em; margin-right: 22px;">
 <c:choose>
 	<c:when test="${sessionScope.logon }">
-		<div>
-			<b>${logonUser.id }님 환영합니다.</b>
-		</div>
 		<select id="select">
+			<option>${logonUser.id }님 환영합니다.</option>
 			<option value="option1">마이페이지</option>
 			<option value="option2">로그아웃하기</option>
 		</select>
@@ -50,7 +48,7 @@
 		let selectValue = this.value;
 		
 		if(selectValue === "option1") {
-			window.location.href="/user/myPage";
+			window.location.href="/myPage";
 			
 		} else if(selectValue === "option2"){
 			window.location.href="/user/signOut";

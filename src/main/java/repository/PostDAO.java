@@ -25,5 +25,5 @@ public class PostDAO extends DAO{
 			session.close();
 		}
 	}
-
+ 
 }

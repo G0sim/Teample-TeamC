@@ -7,15 +7,15 @@
 	<!-- 특정 게시글 불러오기 -->
 	<select id="readByPost" resultType="data.Review"
 		parameterType="String">
-		SELECT * FROM REVIEWS WHERE POSTNUM = #{postnum}
+		SELECT * FROM REVIEWS WHERE POSTNUM = #{postNum}
 	</select>
 	<!-- 특정 캠프장 찾는 용도 -->
-	<select id="findByCamp" resultType="data.Like"
+	<!-- <select id="findByCamp" resultType="data.Like"
 		parameterType="String">
 		SELECT LIKES.*
 		FROM LIKES
-		WHERE CAMPNAME = #{campname }
-	</select>
+		WHERE CAMPNAME = #{campName }
+	</select> -->
 	<!-- 게시글 N개 보기 -->
 	<select id="findByPostAtoB" resultType="data.Review"
 		parameterType="hashmap">

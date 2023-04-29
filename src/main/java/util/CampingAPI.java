@@ -32,11 +32,7 @@ public class CampingAPI {
 			params.put("MobileOS","ETC");
 			params.put("MobileApp", "aa");
 			params.put("_type", "json");
-			params.put("numOfRows", "5");
-			
-	
-			
-			
+			params.put("numOfRows", "100");
 			
 			String queryString = QueryStringBuilder.build(params);
 			URI uri=new URI(target+"?"+queryString);

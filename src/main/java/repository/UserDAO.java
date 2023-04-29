@@ -21,10 +21,11 @@ public class UserDAO extends DAO {
 
 //	로그인
 	public static User findById(String id) {
-		SqlSession session = factory.openSession(true);
+		SqlSession session = factory.openSession();
 		try {
 			return session.selectOne("users.findById", id);
 		} finally {
+			
 			session.close();
 		}
 	}
@@ -50,3 +51,4 @@ public class UserDAO extends DAO {
 	}
 
 }
+ 
