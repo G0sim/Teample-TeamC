@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+import java.util.logging.Handler;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,21 +17,11 @@ public class IndexController extends HttpServlet{
 
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		Response response = CampingAPI.getCamping();
+	
+		Response response = CampingAPI.getCamping("5");
 		
 		req.setAttribute("campingList", response.getBody().getItems().getItem());		
 		
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
 			
 		req.getRequestDispatcher("/WEB-INF/views/index.jsp").forward(req, resp);
 		

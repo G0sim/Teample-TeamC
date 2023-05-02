@@ -172,4 +172,27 @@ public class Item {
 	}
 	
 	
+	
+	@Override
+	public String toString() {
+		return "Item [contentId=" + contentId + ", facltNm=" + facltNm + ", lineIntro=" + lineIntro + ", intro=" + intro
+				+ ", induty=" + induty + ", lctCl=" + lctCl + ", doNm=" + doNm + ", sigunguNm=" + sigunguNm
+				+ ", zipcode=" + zipcode + ", addr1=" + addr1 + ", addr2=" + addr2 + ", mapX=" + mapX + ", mapY=" + mapY
+				+ ", direction=" + direction + ", tel=" + tel + ", homepage=" + homepage + ", tooltip=" + tooltip
+				+ ", caravInnerFclty=" + caravInnerFclty + ", operPdCl=" + operPdCl + ", operDeCl=" + operDeCl
+				+ ", sbrsEtc=" + sbrsEtc + ", animalCmgCl=" + animalCmgCl + ", tourEraCl=" + tourEraCl
+				+ ", firstImageUrl=" + firstImageUrl + ", getContentId()=" + getContentId() + ", getFacltNm()="
+				+ getFacltNm() + ", getLineIntro()=" + getLineIntro() + ", getIntro()=" + getIntro() + ", getInduty()="
+				+ getInduty() + ", getLctCl()=" + getLctCl() + ", getDoNm()=" + getDoNm() + ", getSigunguNm()="
+				+ getSigunguNm() + ", getZipcode()=" + getZipcode() + ", getAddr1()=" + getAddr1() + ", getAddr2()="
+				+ getAddr2() + ", getMapX()=" + getMapX() + ", getMapY()=" + getMapY() + ", getDirection()="
+				+ getDirection() + ", getTel()=" + getTel() + ", getHomepage()=" + getHomepage() + ", getTooltip()="
+				+ getTooltip() + ", getCaravInnerFclty()=" + getCaravInnerFclty() + ", getOperPdCl()=" + getOperPdCl()
+				+ ", getOperDeCl()=" + getOperDeCl() + ", getSbrsEtc()=" + getSbrsEtc() + ", getAnimalCmgCl()="
+				+ getAnimalCmgCl() + ", getTourEraCl()=" + getTourEraCl() + ", getFirstImageUrl()=" + getFirstImageUrl()
+				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
+				+ "]";
+	}
+	
+	
 }
