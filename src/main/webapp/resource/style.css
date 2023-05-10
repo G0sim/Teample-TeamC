@@ -101,6 +101,7 @@ detail-search:hover{
 	border: 0;
 	font-size: 20px;
 	cursor: pointer;
+	background-color:transparent;
 }
 
 .reset-button{
@@ -357,6 +358,15 @@ a:hover {
 	text-align: center;
 }
 
+.modify-button-position{
+	display: flex;
+	justify-content: space-between;
+	width: 40%;
+	padding-left:60%;
+	text-align: center;
+}
+
+
 .write-button-position {
 	display: flex;
 	justify-content: end;
@@ -596,6 +606,11 @@ a:hover {
 	border: 2px solid #454545;
 	cursor: pointer;
 }
+
+.upload-button {
+	font-family: 'Pretendard-Regular';
+}
+
 
 .blank {
 	font-family: 'Pretendard-Regular';
